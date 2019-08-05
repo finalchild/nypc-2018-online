@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>[5일차 | 200점] 금 줄 게임 - NYPC 2018 온라인 예선 풀이</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="21.html" class="active"><strong aria-hidden="true">1.</strong> [5일차 | 200점] 금 줄 게임</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">NYPC 2018 온라인 예선 풀이</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#5일차--200점-금-줄-게임" id="5일차--200점-금-줄-게임">[5일차 | 200점] 금 줄 게임</a></h1>
+<p><a href="https://nypc.github.io/2018/2018_online_21.html">문제 읽기</a></p>
+<h2><a class="header" href="#관찰" id="관찰">관찰</a></h2>
+<p>먼저, N=2인 경우는 특수하게 취급해야 합니다. N=2일 때 답이 0인 것은 자명합니다.</p>
+<h3><a class="header" href="#그래프로-보기" id="그래프로-보기">그래프로 보기</a></h3>
+<p>찰흙 덩어리를 꼭짓점으로, 줄을 변으로 봅니다. 두 꼭짓점 사이에 줄이 여러 개가 있는 경우에는 줄들을 하나의 변으로 합치고 줄의 개수를 가중치로 합니다.</p>
+<p>합하기는 모두 N-2번 합니다. 따라서 꼭짓점은 마지막에 2개가 됩니다. 이는 그래프를 <a href="https://en.wikipedia.org/wiki/Cut_(graph_theory)">절단</a>(cut)해서 2개의 덩어리를 구성하는 것입니다. 마지막에 가져가지 않고 남겨두는 줄은 마지막 2개의 꼭짓점 사이에 이어진 줄이므로, 절단이 지나는 줄입니다. 이 줄들은 무시해도 무방합니다.</p>
+<h3><a class="header" href="#적의-전략" id="적의-전략">적의 전략</a></h3>
+<p>우리는 게임을 시작하기 전에 합하기 과정을 지정합니다. 적을 무시했을 때, 우리가 매 차례에 가져가게 되는 줄의 개수를 a<sub>n</sub> ~ a<sub>3</sub>으로 나타냅시다. a<sub>k</sub>는 꼭짓점이 k개 남았을 때, 합치기를 통해 k-1개로 줄이면서 우리가 가져오는 줄의 개수, 즉 k→(k-1) 합치기에서 우리가 가져오는 줄의 개수입니다.</p>
+<p>우리가 k→(k-1) 합치기를 하고 나면, a<sub>k</sub> 칸은 잠기고, 적은 a<sub>k-1</sub> ~ a<sub>3</sub> 중에서 값이 1 이상인 것을 하나 골라 1 감소시킨다고 생각할 수 있습니다. 이때, 앞쪽에 있는 칸이 먼저 잠기므로, 최대한 앞쪽에 있는 값을 감소시키는 것이 유리합니다. 이 탐욕법이 적의 최적 전략입니다.</p>
+<p>모든 k(4≤k≤n-1)에 대해서, 원본 a<sub>k-1</sub> ~ a<sub>3</sub>의 합이 k-2 이상이면 적은 모든 차례에서 줄을 뺏어갈 수 있습니다. 반대로 어떤 k에서 그 합이 k-3 이하이면, 앞으로 적의 차례가 k-2번이 남았는데 뺏어갈 줄이 부족하므로 적이 줄을 뺏어가지 못하는 차례가 생기게 됩니다. (직관적으로 생각할 수 있고, 수학적 귀납법을 이용하면 증명도 그리 어렵지 않습니다.)</p>
+<h3><a class="header" href="#n-3개를-빼앗기는-경우" id="n-3개를-빼앗기는-경우">N-3개를 빼앗기는 경우</a></h3>
+<p>절단 결과 2개의 연결 부분이 나온 경우를 생각해 봅시다. 두 개의 연결 부분은 (적을 무시한) 합치기 과정을 거쳐도 두 개의 연결 부분이므로, 남아 있는 변의 개수는 꼭짓점이 k개일 때 k-2개 이상입니다. 따라서 원본 a<sub>k-1</sub> ~ a<sub>3</sub>의 합은 항상 k-2개 이상입니다. N-3개를 빼앗기게 됩니다.</p>
+<h3><a class="header" href="#n-3개를-빼앗기지-않는-경우" id="n-3개를-빼앗기지-않는-경우">N-3개를 빼앗기지 않는 경우</a></h3>
+<p>절단 결과 3개 이상의 연결 부분이 나온 경우를 생각해 봅시다. 서로 다른 연결 부분에 속하는 꼭짓점을 합쳐서 얻는 이득은 전혀 없기 때문에, 연결 부분끼리 합치는 일은 최대한 나중으로 미루는 것이 자연스럽습니다. 예를 들어 연결 부분이 3개라고 하면, 꼭짓점이 3개 남았을 때 세 꼭짓점은 각각 하나의 연결 부분을 나타내고, 그 사이에 변은 하나도 없으므로 마지막 차례에서 우리가 가져오려는 줄도 0개입니다. 즉, a<sub>3</sub>=0이고 이는 k-3 (k=3) 이하이므로 N-3개를 빼앗기지 않습니다. 정확히 N-4개를 빼앗긴다는 것을 볼 수 있습니다.</p>
+<p>연결 부분 3개가 나오는 경우에 N-4개를 빼앗기므로, 일반화시키면 연결 부분 c개가 나올 때 <code>N-c-1</code>개를 빼앗긴다고 할 수 있습니다. (역시 수학적 귀납법으로 증명할 수 있습니다.) 이 식은 연결 부분이 2개일 때에도 성립합니다.</p>
+<h3><a class="header" href="#최소-절단을-사용해도-되는가" id="최소-절단을-사용해도-되는가">최소 절단을 사용해도 되는가?</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Minimum_cut">최소 절단</a>은 절단이 지나는 줄 수의 합을 최소화시키는 절단입니다.</p>
+<p>절단이 지나는 줄은 우리가 애초에 포기하게 되므로, 최소 절단을 사용하는 것이 유리해 보입니다. 하지만 절단으로 그래프를 분리시켜 연결 부분의 수를 늘리면, 연결 부분 하나마다 줄 1개만큼 이득을 볼 수 있습니다.</p>
+<p>하지만 줄 1개는 그리 큰 이득이 아닙니다. 원래 연결되어 있던 부분을 절단으로 갈라놓으려면 연결 부분 하나를 늘리는데 줄 1개 이상을 포기해야 합니다. 따라서 최소 절단을 사용하는 것이 최적이라는 것을 알 수 있습니다.</p>
+<p>원래 그래프가 연결 부분 2개 이상으로 이루어진 경우, 최소 절단이 지나는 변은 0개입니다. 따라서 포기하는 줄도 0개이므로 최소 절단을 계산할 필요가 없습니다.</p>
+<h2><a class="header" href="#결론" id="결론">결론</a></h2>
+<p>최소 절단으로 그래프를 두 부분으로 나누고, 절단 결과에서 연결 부분의 개수에 따라 답을 계산합니다.</p>
+<p>원래 그래프가 연결 부분 2개 이상으로 이루어진 경우, 최소 절단이 지나는 변은 0개이며, 최소 절단이 연결 부분의 개수에 영향을 주지 않습니다. 연결 부분이 c개일 때, 줄 0개를 포기하고 적에게 N-c-1개를 빼앗기므로 답은 <code>M-N+c+1</code>입니다. 이것으로 부분 점수 2(30점)을 받을 수 있습니다.</p>
+<p>원래 그래프가 연결된 그래프인 경우, 최소 절단을 계산해야 합니다. 음수가 아닌 가중치가 있는 무향 그래프에서 최소 절단을 계산하는 알고리즘인 <a href="https://en.wikipedia.org/wiki/Stoer%E2%80%93Wagner_algorithm">Stoer-Wagner 알고리즘</a>을 사용합니다. <i>O</i>(|<i>V</i>||<i>E</i>| + |<i>V</i>|<sup>2</sup>log|<i>V</i>|) 시간이 걸립니다. 최소 절단이 지나는 줄의 개수를 t라 했을 때, 줄 t개를 포기하고 적에게 N-3개를 빼앗기므로, 답은 <code>M-t-N+3</code>입니다.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

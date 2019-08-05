@@ -1,0 +1,6 @@
+[book]
+authors = ["Final Child"]
+language = "en"
+multilingual = false
+src = "src"
+title = "NYPC 2018 온라인 예선 풀이"
